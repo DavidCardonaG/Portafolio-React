@@ -163,34 +163,71 @@ align-items: flex-start;
 padding: 0px;
 position: static;
 width: 1222px;
-height: 368px;
+height: 428px;
 left: 0px;
 top: 104px;
 `
 const PortafolioColumns = styled.div`
 display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-position: static;
-width: 100%;
-height: 368px;
-left: 0px;
-top: 0px;
+flex-direction: row;
+justify-content:flex-start;
 `
 const PortafolioColumnP = styled.div`
-position: static;
+display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
   width: 391px;
-  height: 40px;
+  height: 450px;
   left: 0px;
-  top: 256px;
+  top: 0px;
   margin-top: 3rem;
   font-family: Lora;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
-  line-height: 50px;
+  font-size: 25px;
+  line-height: 15px;
   color: #0f0e17;
+`
+
+const PortafolioColumn2 = styled.div`
+display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 392px;
+  height: 374px;
+  left: 515px;
+  top: 0px;
+  margin-top: 3rem;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 15px;
+  color: #0f0e17;
+  margin-left: 1rem;
+`
+const PortafolioColumn3 = styled.div`
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+margin-top: 3rem;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 20px;
+  color: #0f0e17;
+  margin-left: 1rem;
+position: static;
+width: 250px;
+height: 350px;
+left: 831px;
+top: 0px;
 `
 const PortafolioBtnD = styled.div`
 display: flex;
@@ -226,4 +263,6 @@ export const ServiceT = PortafolioServiceT
 export const ContainerS = PortafolioContainerS
 export const Columns = PortafolioColumns
 export const ColumnP = PortafolioColumnP
+export const Column2 = PortafolioColumn2
+export const Column3 = PortafolioColumn3
 export const BtnD = PortafolioBtnD

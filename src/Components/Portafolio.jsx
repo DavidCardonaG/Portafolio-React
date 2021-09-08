@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import {Header,Navbar,Logotipo,List,A,HeaderButton,Btn,Welcome,Datas,H1,P,Img,Parrafo,Article,Icon,Projects,Project,Image,Card,CardH2,CardP,CardButtons,Btn1,Btn2 } from '../styled/PortafolioStyled'
-import {Card2,Project2,Img2,CardPro2,PCard2, Card3, Img3, CardPro3,PCard3,Products,Services,Service,ServiceT,ContainerS,Columns,ColumnP,BtnD} from '../styled/PortafolioStyled2'
+import {Card2,Project2,Img2,CardPro2,PCard2, Card3, Img3, CardPro3,PCard3,Products,Services,Service,ServiceT,ContainerS,Columns,ColumnP,Column2,Column3,BtnD} from '../styled/PortafolioStyled2'
 import{Testimonios,TestiT,Testimonio1,Comentario,NameC,ComeP,Testimonio2,ImgF,Formulario, CardFormu,CardInputs,InputT,InputP,InputName,InputEmail,InputTextarea,InputBtn,Footer,LogoF,Pfooter,PAF,Social,Redes} from '../styled/PortafolioStyled3'
 export default class Portafolio extends Component {
     render() {
-        return (
+return (
             <div>
                <Header>
         <Logotipo>LOGO</Logotipo>
@@ -50,8 +50,8 @@ export default class Portafolio extends Component {
                 <CardH2 class="p-card">FIXMOVIE</CardH2>
                 <CardP> Es una de las plataformas de series y peliculas más famosas del mundo</CardP>
                     <CardButtons>
-                       <Btn1>Ver proyecto completo</Btn1>
-                        <Btn2>Ver código</Btn2>
+                       <Btn1 id="bnt1" onClick={this.Redirect}>Ver proyecto completo</Btn1>
+                        <Btn2 id="btn2">Ver código</Btn2>
                      </CardButtons>
              </Card>
         </div>
@@ -64,8 +64,8 @@ export default class Portafolio extends Component {
                     <PCard2>Principe Fresco</PCard2>
                     <PCard2>La serie esta protagonizada por will smith como una versión ficticia de el</PCard2>
                     <CardButtons>
-                        <Btn1>Ver proyecto completo</Btn1>
-                         <Btn2>Ver código</Btn2>
+                        <Btn1 id="btn3">Ver proyecto completo</Btn1>
+                         <Btn2 id="btn4">Ver código</Btn2>
                       </CardButtons>
                 </CardPro2>
             </Project2>
@@ -77,12 +77,12 @@ export default class Portafolio extends Component {
                     <PCard3>TECH.SHOP</PCard3>
                     <PCard3>Es una tienda online con los más grandes estandares de calidad en sus productos</PCard3>
                     <CardButtons>
-                        <Btn1>Ver proyecto completo</Btn1>
-                         <Btn2>Ver código</Btn2>
+                        <Btn1 id="btn5">Ver proyecto completo</Btn1>
+                         <Btn2 id="btn6"> Ver código</Btn2>
                       </CardButtons>
             </CardPro3>
     </Card3>
-    <Products>Ver más productos  <i class="fas fa-arrow-right"></i></Products>
+    <Products id="btn7">Ver más productos  <i class="fas fa-arrow-right"></i></Products>
 </Projects>
 
 <Services>
@@ -98,9 +98,19 @@ export default class Portafolio extends Component {
                  <p>Prueba de concepto</p>
                  <BtnD>Ver servicios de diseño <i class="fas fa-arrow-right"></i></BtnD>
                 </ColumnP>
-                <div class="columns-2">
+                <Column2>
                     <h1>Desarrollo</h1>
-                </div>
+                    <p>Aplicaciones Moviles</p>
+                 <p>Sitios Web</p>
+                 <p>Aplicaciones web progresivas</p>
+                 <BtnD>Ver servicios de diseño <i class="fas fa-arrow-right"></i></BtnD>
+                </Column2>
+                <Column3>
+                    <h1>Marca</h1>
+                    <p>Identidad de la marca</p>
+                 <p>Estrategia de marca</p>
+                 <BtnD>Ver servicios de diseño <i class="fas fa-arrow-right"></i></BtnD>
+                </Column3>
             </Columns>
         </ContainerS>
     </Service>
@@ -172,6 +182,8 @@ export default class Portafolio extends Component {
         </Social>
     {/* </div> */}
 </Footer>
+
+
             </div>
         )
     }
