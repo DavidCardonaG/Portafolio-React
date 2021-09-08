@@ -179,10 +179,9 @@ display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px;
-
   position: absolute;
   width: 100%;
-  height: 1180px;
+  height: 1280px;
   left: 72px;
   top: 994px;
 `
@@ -283,7 +282,6 @@ color: #ff8906;
 border: 2px solid #ff8906;
 box-sizing: border-box;
 `
-
 
 
 export const Header = PortafolioHeader
